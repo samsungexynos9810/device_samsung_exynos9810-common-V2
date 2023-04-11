@@ -40,3 +40,8 @@ service gpsd /vendor/bin/hw/gpsd -c /vendor/etc/gnss/gps.xml
     group system inet net_raw wakelock
     ioprio be 0
     seclabel u:r:gpsd:s0
+
+service sec_gnss_service /vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+    class main
+    user system
+    group system gps
