@@ -291,6 +291,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGo
 
+# Primary AudioHAL
+PRODUCT_PACKAGES += \
+    audio.primary.exynos9810
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
