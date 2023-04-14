@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
+    gatekeeper.exynos9810 \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
@@ -166,8 +167,8 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-service \
-    android.hardware.keymaster@3.0-impl
+    android.hardware.keymaster@4.0_tee-service \
+    android.hardware.keymaster@4.0-impl
 
 # Lawnicons
 $(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
@@ -190,6 +191,12 @@ PRODUCT_PACKAGES += \
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.exynos9810-mali
+
+# MobiCore
+PRODUCT_PACKAGES += \
+    libMcClient \
+    libMcRegistry \
+    mcDriverDaemon
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -344,6 +351,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
+    $(COMMON_PATH)/tee/kinibi500 \
     hardware/google/interfaces \
     hardware/google/pixel \
     $(COMMON_PATH)/aidl/power-libperfmgr

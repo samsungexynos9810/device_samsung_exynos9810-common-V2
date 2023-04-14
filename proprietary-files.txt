@@ -126,11 +126,6 @@ vendor/firmware/mfc_fw.bin
 -vendor/lib64/egl/libGLES_mali.so|0b62cb03c7dff83aa8f41451d7ff2ff8
 -vendor/lib64/libgpudataproducer.so|8820663f138978add20a97b36374cc71
 
-# Keymaster
--vendor/lib64/hw/keystore.mdfpp.so
--vendor/lib64/libkeymaster2_mdfpp.so
--vendor/lib64/libskeymaster3device.so
-
 # Mobicore
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/app/mcRegistry/08130000000000000000000000000000.tlbin
@@ -157,10 +152,7 @@ vendor/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin
 vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin
--vendor/bin/mcDriverDaemon
 vendor/etc/init/mobicore.rc
--vendor/lib/libMcClient.so
--vendor/lib64/libMcClient.so
 
 # RIL - N770FXXU8FUL7
 vendor/etc/init/init.vendor.rilchip.rc|0f5f13a11c084db5dc0eb47bb693235a2273f91e

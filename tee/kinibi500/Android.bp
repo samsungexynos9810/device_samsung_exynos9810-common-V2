@@ -1,5 +1,5 @@
 soong_namespace {
-    imports: ["hardware/samsung_slsi/exynos/tee/kinibi500"],
+    imports: ["device/samsung/exynos9810-common/tee/kinibi500"],
 }
 
 subdirs = [
