@@ -55,41 +55,6 @@ LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
 
-# =============================================================================
-#
-# Module: testTeeKeymaster4 - test driver for libMcTeeKeymaster4.so
-#
-# =============================================================================
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := testTeeKeymaster4
-LOCAL_CPPFLAGS := -Wall
-LOCAL_CPPFLAGS += -Wextra
-LOCAL_CPPFLAGS += -Werror
-LOCAL_CPPFLAGS += -D__STDC_LIMIT_MACROS
-LOCAL_CPPFLAGS += -std=c++11
-
-LOCAL_CPPFLAGS += -DLOG_TAG=\"testTeeKeymaster4\"
-
-ALL_TST_FILES := $(wildcard ${LOCAL_PATH}/test/*.cpp)
-LOCAL_SRC_FILES := $(ALL_TST_FILES:$(LOCAL_PATH)/%=%)
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/cust
-LOCAL_C_INCLUDES += $(LOCAL_PATH)/test
-
-LOCAL_SHARED_LIBRARIES := $(MY_LIBRARY_MODULE) libMcClient
-ifeq ($(APP_PROJECT_PATH),)
-LOCAL_SHARED_LIBRARIES += liblog
-else
-LOCAL_C_INCLUDES += \
-	$(COMP_PATH_AndroidIncludes)
-
-LOCAL_LDLIBS := -llog
-endif
-LOCAL_SHARED_LIBRARIES += libcrypto
-
-include $(BUILD_EXECUTABLE)
-
 $(call import-add-path,/)
 $(call import-module,$(COMP_PATH_AndroidBoringSsl))
 $(call import-module,$(COMP_PATH_MobiCoreClientLib_module))
