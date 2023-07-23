@@ -55,6 +55,9 @@ vendor/firmware/vts.bin
 -vendor/lib64/camera.device@3.3-impl.so;MODULE=camera.device@3.3-impl.exynos9810
 -vendor/lib64/camera.device@3.5-impl.so;MODULE=camera.device@3.5-impl.exynos9810
 
+## libcrypto - built from external/boringssl@42125132 with changes done to asn1t.h in 9211b80 reverted
+-vendor/lib64/libcrypto-compat.so|c62caa1fb25df46cc343376fdb03ced8607f6cda
+
 # Camera dependencies
 -vendor/lib/libSEF.quram.so
 -vendor/lib/libcnn.so
