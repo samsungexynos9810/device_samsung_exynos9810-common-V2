@@ -119,6 +119,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
+    gatekeeper.$(TARGET_SOC) \
     android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
@@ -176,6 +177,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    keystore.$(TARGET_SOC) \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl
 

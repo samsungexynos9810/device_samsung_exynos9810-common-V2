@@ -88,10 +88,6 @@ vendor/firmware/score/camera2/score_mc_dmb.bin
 # Charger Firmware
 vendor/firmware/mfc_fw.bin
 
-# Gatekeeper
--vendor/lib/hw/gatekeeper.exynos9810.so
--vendor/lib64/hw/gatekeeper.exynos9810.so
-
 # GPS/GNSS - N770FXXU8HVK5
 -vendor/bin/hw/gpsd|715cc3de92e9913cd09bd77ff561184b
 -vendor/bin/hw/lhd|7d4dfce04564545fa6a5411abba66c36
@@ -112,11 +108,6 @@ vendor/firmware/mfc_fw.bin
 -vendor/lib/egl/libGLES_mali.so|c87503f1c89aa75cd7602c71f257fe39
 -vendor/lib64/egl/libGLES_mali.so|0b62cb03c7dff83aa8f41451d7ff2ff8
 -vendor/lib64/libgpudataproducer.so|8820663f138978add20a97b36374cc71
-
-# Keymaster
--vendor/lib64/hw/keystore.mdfpp.so
--vendor/lib64/libkeymaster2_mdfpp.so
--vendor/lib64/libskeymaster3device.so
 
 # Mobicore
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
@@ -144,10 +135,7 @@ vendor/app/mcRegistry/ffffffffd0000000000000000000001a.tlbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000045.drbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000062.tlbin
 vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin
--vendor/bin/mcDriverDaemon
 vendor/etc/init/mobicore.rc
--vendor/lib/libMcClient.so
--vendor/lib64/libMcClient.so
 
 # RIL - N770FXXU8FUL7
 vendor/etc/init/init.vendor.rilchip.rc|0f5f13a11c084db5dc0eb47bb693235a2273f91e
