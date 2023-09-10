@@ -27,6 +27,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
+# A-Box Service Daemon
+PRODUCT_PACKAGES += main_abox
+
 # Acrylic
 PRODUCT_PACKAGES += \
     libacryl
@@ -42,12 +45,16 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl \
     android.hidl.allocator@1.0.vendor:32 \
-    audio.bluetooth.default \
-    audio.r_submix.default \
-    audio.usb.default \
     libaudioroute \
     libtinyalsa \
     libtinycompress
+
+# AudioHAL libraries
+PRODUCT_PACKAGES += \
+    audio.primary.$(TARGET_SOC) \
+    audio.usb.default \
+    audio.r_submix.default \
+    audio.bluetooth.default
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \

@@ -1,3 +1,18 @@
+#
+# AUDIO & VOICE
+#
+BOARD_USES_GENERIC_AUDIO := true
+
+# Primary AudioHAL Configuration
+BOARD_USE_COMMON_AUDIOHAL := true
+BOARD_USE_CALLIOPE_AUDIOHAL := false
+BOARD_USE_AUDIOHAL := false
+BOARD_USE_AUDIOHAL_COMV1 := true
+
+# SoundTriggerHAL Configuration
+BOARD_USE_SOUNDTRIGGER_HAL := false
+BOARD_USE_SOUNDTRIGGER_HAL_MMAP := false
+
 # Kernel headers
 TARGET_BOARD_KERNEL_HEADERS := hardware/samsung_slsi/exynos/kernel-4.9-headers/kernel-headers
 
