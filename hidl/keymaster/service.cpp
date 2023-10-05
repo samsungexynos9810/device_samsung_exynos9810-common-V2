@@ -15,7 +15,7 @@
 ** limitations under the License.
 */
 
-#define LOG_TAG "android.hardware.keymaster@3.0-service"
+#define LOG_TAG "android.hardware.keymaster@3.0-service.exynos9810"
 
 #include <android/hardware/keymaster/3.0/IKeymasterDevice.h>
 
