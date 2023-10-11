@@ -48,6 +48,7 @@
 /dev/vts_fio_dev                                         u:object_r:vts_fio_device:s0
 
 # Exynos9810 HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth-service.exynos9810                             u:object_r:hal_bluetooth_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9].[0-9]-service\.exynos9810  u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service.exynos9810                        u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light(@[0-9].[0-9])?-service\.exynos9810                 u:object_r:hal_light_default_exec:s0

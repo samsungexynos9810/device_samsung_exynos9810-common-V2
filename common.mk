@@ -62,8 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl:64 \
-    android.hardware.bluetooth@1.0-service
+    android.hardware.bluetooth-service.exynos9810
 
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
